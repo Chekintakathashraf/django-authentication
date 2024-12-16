@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from authapp.views import *
 
 urlpatterns = [
+    path('', login_page),
+    path('check-otp/<user_id>/', check_otp),
+    path('dashboard/', dashboard),
     path('admin/', admin.site.urls),
 ]

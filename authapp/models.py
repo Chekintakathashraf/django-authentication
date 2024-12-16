@@ -8,6 +8,7 @@ import os
 from django.conf import settings
 
 
+
 class CustomUser(AbstractUser):
     username = None
 
