@@ -134,3 +134,28 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'youremail@gmail.com'
 EMAIL_HOST_PASSWORD = 'email_password'
+
+#OR
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+#OR
+
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = '/tmp/app-emails'  # Replace this with a directory of your choice
+
+
+#OR
+
+# EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+
+
+#OR
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.mailtrap.io'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'your_mailtrap_username'
+# EMAIL_HOST_PASSWORD = 'your_mailtrap_password'
+
+
